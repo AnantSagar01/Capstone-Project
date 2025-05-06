@@ -20,13 +20,15 @@ function RegisterForm() {
     if (form.password !== form.confirm) return alert('Passwords do not match');
 
     try{
-        const response = await axios.post('https://localhost:5000/api/register', {
+        //const response = 
+        await axios.post('http://localhost:5000/api/register', {
           firstName: form.first,
           lastName: form.last,
           email: form.email,
           password: form.password,
+          confirm_password:form.password
         });
-  
+       // console.log(response.data);
         setSuccess('Successfully Registered!');
         setError('');
         
