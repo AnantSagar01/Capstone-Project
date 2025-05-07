@@ -25,7 +25,10 @@ function LoginForm() {
       });
 
       // Handle success response
+      let token=response.data.token;
+      localStorage.setItem("token",token);
       setSuccess('Successfully Logged In!');
+      navigate("/products");
       // You can also handle additional data returned from the API if needed
       console.log('Logged in', response.data);
   } catch (error) {
@@ -45,7 +48,6 @@ function LoginForm() {
       }
   }
 };
- 
   
  
   return (
