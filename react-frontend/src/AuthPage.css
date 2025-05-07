@@ -54,24 +54,34 @@
     color: #13a21a;
   }
    
-  /* Checkbox Container */
+    /* Checkbox Container */
   .checkbox-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 20px 0;
+    background-color: #f5f7fa;
   }
-   
+
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 20px; /* Add margin to the right of the checkbox for spacing */
+    border: 1px solid #ccc; /* Add a border to the checkbox */
+    width: 20px; /* Optional: Set a width for the checkbox */
+    height: 20px; /* Optional: Set a height for the checkbox */
+    cursor: pointer; /* Optional: Change cursor to pointer when hovering over checkbox */
+  }
+
   .checkbox-container label {
-    margin-right: 180px;
     color: #333;
   }
+
+
    
   /* Buttons */
   .auth-container button {
-    margin: 10px;
-    padding: 12px 24px;
-    border-radius: 25px;
+    margin: 11px;
+    padding: 8px 15px;
+    border-radius: 26px;
     border: none;
     background: #d75c83;
     color: #fff;

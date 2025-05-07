@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AuthPage.css';
 import logo from './logo.jpg';
- 
+
 function Home() {
   const navigate = useNavigate();
- 
+
+  useEffect(() => {
+    // Check if the user is logged in
+    const token = localStorage.getItem('token');
+    if (token) {
+      // If logged in, redirect to the products page
+      navigate('/products');
+    }
+  }, [navigate]);
+
   return (
     <div className="home-wrapper">
       <div className="auth-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h2>Welcome to Our Online Store - SHOPEASY</h2>
+        <h3>Welcome <br/><br/>Find It Fast, Love It Forever </h3>
         <div className="btn-group">
           <button onClick={() => navigate('/register')}>Create Account</button>
-          <button onClick={() => navigate('/login')}>Login (Already Have an Account)</button>
+          <br/>
+          <button onClick={() => navigate('/login')}>Login</button>
         </div>
       </div>
-     
     </div>
   );
 }
- 
+
 export default Home;

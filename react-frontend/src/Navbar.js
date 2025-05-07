@@ -1,12 +1,23 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation ,useNavigate } from 'react-router-dom';
 import './ShopEasy.css'; // Ensure this file includes any necessary styles for the navbar
 import logo from './logo.jpg'; // Adjust the path to point to the correct logo file
- 
+
+
 function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
  
   const isActive = (path) => location.pathname === path;
+  const handleLogout = () => {
+    // Remove the token from localStorage
+    localStorage.removeItem('token');
+    console.log('Token removed from localStorage.');
+
+    // Navigate to the home page or login page
+    navigate('/login');
+  };
+
  
   return (
     <nav className="navbar">
@@ -19,6 +30,7 @@ function Navbar() {
         <Link to="/products" className={isActive('/products') ? 'active-link' : ''}>Products</Link>
         <Link to="/cart" className={isActive('/cart') ? 'active-link' : ''}>Cart</Link>
         <Link to="/feedback" className={isActive('/feedback') ? 'active-link' : ''}>Feedback</Link>
+        <Link to="/logout" className={isActive('/logout') ? 'active-link' : ''}>Logout</Link>
       </div>
     </nav>
   );

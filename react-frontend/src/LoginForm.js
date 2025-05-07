@@ -25,7 +25,10 @@ function LoginForm() {
       });
 
       // Handle success response
+      let token=response.data.token;
+      localStorage.setItem("token",token);
       setSuccess('Successfully Logged In!');
+      navigate("/products");
       // You can also handle additional data returned from the API if needed
       console.log('Logged in', response.data);
   } catch (error) {
@@ -45,7 +48,6 @@ function LoginForm() {
       }
   }
 };
- 
   
  
   return (
@@ -71,7 +73,7 @@ function LoginForm() {
             checked={rememberMe}
             onChange={() => setRememberMe(!rememberMe)}
           />
-          <label htmlFor="rememberMe">Remember Me</label>
+          <label htmlFor="rememberMe">Remember me</label>
         </div>
         <button onClick={handleLogin}>Login</button>
         <button onClick={() => navigate(-1)}>Back</button>
