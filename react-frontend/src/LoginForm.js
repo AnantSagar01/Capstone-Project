@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './AuthPage.css';
  
 function LoginForm() {
@@ -14,12 +15,38 @@ function LoginForm() {
   const validatePassword = password =>
     /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/.test(password);
  
-  const handleLogin = () => {
+  const handleLogin = async() => {
     if (!validateEmail(email)) return alert('Invalid Email Format');
     if (!validatePassword(password)) return alert('Password must be 8+ chars, 1 capital, 1 number, 1 symbol');
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+          email: email,
+          password: password
+      });
+
+      // Handle success response
+      setSuccess('Successfully Logged In!');
+      // You can also handle additional data returned from the API if needed
+      console.log('Logged in', response.data);
+  } catch (error) {
+      if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          alert(`Login failed: ${error.response.data.message}`);
+          console.error('Error response:', error.response.data);
+      } else if (error.request) {
+          // The request was made but no response was received
+          alert('No response received from the server. Please try again later.');
+          console.error('Error request:', error.request);
+      } else {
+          // Something happened in setting up the request that triggered an Error
+          alert('An error occurred during login. Please try again later.');
+          console.error('Error:', error.message);
+      }
+  }
+};
  
-    setSuccess('Successfully Logged In!');
-  };
+  
  
   return (
     <div className="page-wrapper">
@@ -53,5 +80,7 @@ function LoginForm() {
     </div>
   );
 }
+
+
  
 export default LoginForm;
