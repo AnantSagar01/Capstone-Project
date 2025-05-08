@@ -30,7 +30,7 @@ function Navbar() {
         <Link to="/products" className={isActive('/products') ? 'active-link' : ''}>Products</Link>
         <Link to="/cart" className={isActive('/cart') ? 'active-link' : ''}>Cart</Link>
         <Link to="/feedback" className={isActive('/feedback') ? 'active-link' : ''}>Feedback</Link>
-        <button onClick={handleLogout} className={isActive('/logout') ? 'active-link' : ''}>Logout</button>
+        <Link to="/logout" className={isActive('/logout') ? 'active-link' : ''}>Logout</Link>
       </div>
     </nav>
   );
