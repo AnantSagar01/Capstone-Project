@@ -9,7 +9,7 @@ import CheckoutPage from './CheckoutPage';
 import FeedbackPage from './FeedbackPage';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Logout from './LogoutForm'; // Ensure this is the correct path to your Logout component
+import Logout from './LogoutForm'; 
 import './ShopEasy.css';
 
 const isAuthenticated = () => {
@@ -32,6 +32,7 @@ function App() {
           <Route
             path="/checkout"
             element={isAuthenticated() ? <CheckoutPage /> : <Navigate to="/login" />}
+         
           />
         
           <Route path="/feedback" element={<FeedbackPage />} />

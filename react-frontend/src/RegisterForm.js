@@ -32,7 +32,7 @@ function RegisterForm() {
         setSuccess('Successfully Registered!');
         setError('');
         
-        navigate('/success-page'); // Navigate to another page if needed
+        navigate('/products'); // Navigate to another page if needed
       } 
       catch (error) 
       {

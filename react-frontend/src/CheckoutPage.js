@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import axios from 'axios';
 import './ShopEasy.css';
  
 function CheckoutPage() {
@@ -39,7 +40,7 @@ function CheckoutPage() {
     if (Object.keys(validationErrors).length === 0) {
       alert('Order placed successfully!');
       localStorage.removeItem('cart');
-      // You can redirect the user to a confirmation page or home page here
+    
     } else {
       setErrors(validationErrors);
     }
