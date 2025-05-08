@@ -1,19 +1,31 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ShopEasy.css';
- 
+
 function CartPage() {
   const navigate = useNavigate();
   const [cart, setCart] = useState(() => JSON.parse(localStorage.getItem('cart')) || []);
- 
+
   const removeItem = (index) => {
     const newCart = cart.filter((_, i) => i !== index);
     setCart(newCart);
     localStorage.setItem('cart', JSON.stringify(newCart));
   };
- 
+
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
- 
+
+  const isAuthenticated = () => {
+    return localStorage.getItem('token') !== null;
+  };
+
+  const handleCheckout = () => {
+    if (isAuthenticated()) {
+      navigate('/checkout');
+    } else {
+      navigate('/login');
+    }
+  };
+
   return (
     <div className="page">
       <h2>Your Cart</h2>
@@ -34,9 +46,9 @@ function CartPage() {
         ))
       )}
       <h3>Total: ₹{total}</h3>
-      <button onClick={() => navigate('/checkout')} className="checkout-button">Proceed to Checkout</button>
+      <button onClick={handleCheckout} className="checkout-button">Proceed to Checkout</button>
     </div>
   );
 }
- 
+
 export default CartPage;

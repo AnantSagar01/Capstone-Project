@@ -31,7 +31,7 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route
             path="/checkout"
-            element={isAuthenticated() ? <CheckoutPage /> : <Navigate to="/login" />}
+            element={<CheckoutPage />}
           />
           <Route path="/feedback" element={<FeedbackPage />} />
           {/* Uncomment the NotFoundPage route if you have a component for handling 404 errors */}
