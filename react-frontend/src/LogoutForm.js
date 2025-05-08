@@ -8,6 +8,9 @@ function Logout() {
     // Clear the token from localStorage to log out the user
     localStorage.removeItem('token');
 
+    // Clear the cart from localStorage when logging out
+    localStorage.removeItem('cart');
+
     // Redirect to the login page
     navigate('/login');
   }, [navigate]);
