@@ -47,6 +47,7 @@ function App() {
             path="/checkout"
             element={isAuthenticated() ? <CheckoutPage /> : <Navigate to="/login" />}
           />
+        
           <Route path="/feedback" element={<FeedbackPage />} />
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>
