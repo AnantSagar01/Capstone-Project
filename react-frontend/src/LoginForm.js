@@ -73,7 +73,7 @@ function LoginForm() {
             checked={rememberMe}
             onChange={() => setRememberMe(!rememberMe)}
           />
-          <label htmlFor="rememberMe">Remember Me</label>
+          <label htmlFor="rememberMe">Remember me</label>
         </div>
         <button onClick={handleLogin}>Login</button>
         <button onClick={() => navigate(-1)}>Back</button>

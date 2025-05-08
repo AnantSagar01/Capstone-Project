@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route ,Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Home';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
@@ -9,28 +9,13 @@ import CheckoutPage from './CheckoutPage';
 import FeedbackPage from './FeedbackPage';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Logout from './LogoutForm'; // Ensure this is the correct path to your Logout component
 import './ShopEasy.css';
- 
-// function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/login" element={<LoginForm />} />
-//         <Route path="/register" element={<RegisterForm />} />
-//         <Route path="/products" element={<ProductsPage />} />
-//         <Route path="/cart" element={<CartPage />} />
-//         <Route path="/checkout" element={<CheckoutPage />} />
-//         <Route path="/feedback" element={<FeedbackPage />} />
-//       </Routes>
-//       <Footer />
-//     </Router>
-//   );
-// }
+
 const isAuthenticated = () => {
   return localStorage.getItem('token') !== null;
 };
+
 function App() {
   return (
     <Router>
@@ -43,12 +28,14 @@ function App() {
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/logout" element={<Logout />} />
           <Route
             path="/checkout"
             element={isAuthenticated() ? <CheckoutPage /> : <Navigate to="/login" />}
           />
         
           <Route path="/feedback" element={<FeedbackPage />} />
+          {/* Uncomment the NotFoundPage route if you have a component for handling 404 errors */}
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>
 
@@ -58,5 +45,4 @@ function App() {
   );
 }
 
- 
 export default App;
