@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import sqlite3
+import py_eureka_client.eureka_client as eureka_client
 
 app = Flask(__name__)
 
@@ -34,4 +35,5 @@ def get_feedback():
     return jsonify(feedback_list)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    eureka_client.init(eureka_server="http://localhost:8761/eureka",app_name="feedback-service",instance_ip="10.170.218.212",instance_port=7004)
+    app.run(debug=True,host="0.0.0.0",port=7004)

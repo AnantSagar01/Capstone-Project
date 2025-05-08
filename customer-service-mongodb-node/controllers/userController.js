@@ -60,3 +60,6 @@ exports.getAllUsers = async (req, res) => {
       res.status(500).json({ message: error.message });
     }
   };
+  exports.getParticularUser=async(req,res) => {
+    
+  }
