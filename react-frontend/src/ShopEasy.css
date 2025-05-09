@@ -447,7 +447,7 @@ button:hover {
  
   .nav-links a.active-link {
     font-weight: bold;
-    color: #2575fc;
+    color: rgb(150, 67, 67);
     background-color: #eca1a6; /* Gold background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
     border-radius: 6px;
