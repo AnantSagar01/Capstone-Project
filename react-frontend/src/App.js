@@ -11,6 +11,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Logout from './LogoutForm'; 
 import './ShopEasy.css';
+import Dashboard from './Dashboard';
 
 const isAuthenticated = () => {
   return localStorage.getItem('token') !== null;
@@ -38,6 +39,7 @@ function App() {
           <Route path="/feedback" element={<FeedbackPage />} />
           {/* Uncomment the NotFoundPage route if you have a component for handling 404 errors */}
           {/* <Route path="*" element={<NotFoundPage />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
 
         <Footer />
