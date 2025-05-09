@@ -6,3 +6,9 @@ id,product_id,user_name,review,rating
 5,2,Anonymous,good,4
 6,2,Anonymous,love it,5
 7,6,Anonymous,great,5
+8,4,Anonymous,good,5
+9,7,Anonymous,superb,5
+10,7,Anonymous,fantastic,5
+11,8,Anonymous,amazing,5
+12,9,Anonymous,ok,3
+13,10,Anonymous,cute,5

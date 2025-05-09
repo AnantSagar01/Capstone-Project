@@ -11,7 +11,7 @@ python -m virtualenv venv
 .\venv\Scripts\activate
 pip install Flask-Cors
 pip install py_eureka_client
-python.py
+python app.py
 
 
 
