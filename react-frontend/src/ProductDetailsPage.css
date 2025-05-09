@@ -175,3 +175,28 @@ body, html {
   .image-popup-content:hover {
     transform: scale(1.1);
   }
+
+  .customer-reviews {
+    margin-top: 20px;
+  }
+  
+  .review-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .bar-container {
+    flex-grow: 1;
+    background-color: #eee;
+    margin: 0 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .bar {
+    height: 100%;
+    background-color: #ffcc00;
+    border-radius: 5px;
+  }
+  

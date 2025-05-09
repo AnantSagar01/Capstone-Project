@@ -62,7 +62,7 @@ function ProductsPage() {
               <img src={product.image} alt={product.title} />
               <div className="content">
                 <h3>{product.title}</h3>
-                <div className="rating">{renderStars(product.rating)}</div>
+                
                 <p>{product.description}</p>
                 <div className="price-add-to-cart">
                   <strong>₹{product.price}</strong>

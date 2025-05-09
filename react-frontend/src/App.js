@@ -7,7 +7,7 @@ import RegisterForm from './RegisterForm';
 import ProductsPage from './ProductsPage';
 import CartPage from './CartPage';
 import CheckoutPage from './CheckoutPage';
-import FeedbackPage from './FeedbackPage';
+
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Logout from './LogoutForm';
@@ -28,7 +28,6 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/feedback" element={<FeedbackPage />} />
           <Route path="/products/:productId" element={<ProductDetailsPage />} /> {/* New route */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         </Routes>

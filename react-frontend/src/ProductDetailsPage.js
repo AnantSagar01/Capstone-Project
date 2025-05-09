@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ProductDetailsPage.css';
+import Papa from 'papaparse'; // A library to parse CSV files easily
+
 
 function ProductDetailsPage() {
   const { productId } = useParams();
@@ -36,8 +38,20 @@ function ProductDetailsPage() {
       }
     };
 
+    const fetchFeedbackCSV = async () => {
+      try {
+        const response = await axios.get(`http://localhost:8000/api/feedback-csv`, { responseType: 'blob' });
+        const text = await response.data.text();
+        const parsedData = Papa.parse(text, { header: true });
+        console.log(parsedData.data); // Log parsed data to verify
+      } catch (error) {
+        console.error("Error fetching feedback CSV:", error);
+      }
+    };
+
     fetchProductDetails();
     fetchReviews();
+    fetchFeedbackCSV();
   }, [productId]);
 
   const handleReviewSubmit = async () => {
@@ -82,7 +96,19 @@ function ProductDetailsPage() {
     setIsImagePopupOpen(!isImagePopupOpen);
   };
 
+  const calculateRatingDistribution = (reviews) => {
+    const distribution = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    reviews.forEach(review => {
+      distribution[review.rating]++;
+    });
+    return distribution;
+  };
+  
+  const ratingDistribution = calculateRatingDistribution(reviews);
+  const totalReviews = reviews.length;
+
   if (!product) return <div className="loading">Loading...</div>;
+
 
   return (
     <div className="product-details-container">
@@ -99,7 +125,21 @@ function ProductDetailsPage() {
         <button className="add-to-cart-button" onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
 
+      
+
       <div className="product-details-right">
+        <div className="customer-reviews">
+        <h2>Customer Reviews</h2>
+        {Object.entries(ratingDistribution).map(([rating, count]) => (
+          <div key={rating} className="review-bar">
+            <span>{rating} star</span>
+            <div className="bar-container">
+              <div className="bar" style={{ width: `${(count / totalReviews) * 100}%` }}></div>
+            </div>
+            <span>{((count / totalReviews) * 100).toFixed(1)}%</span>
+          </div>
+          ))}
+        </div>
         <div className="reviews-section">
           <h2>Reviews</h2>
           <ul className="reviews-list">
