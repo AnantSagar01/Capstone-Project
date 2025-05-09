@@ -41,31 +41,31 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "UP" });
 });
 
-
+const host =
+  Object.values(require("os").networkInterfaces())
+    .flat()
+    .find((i) => i.family === "IPv4" && !i.internal)?.address || "127.0.0.1";
+const port = 5000;
 // Configure Eureka client
 const client = new Eureka({
   instance: {
     app: "customer-service",
-    hostName: "localhost",
-    ipAddr: "127.0.0.1",
+    instanceId: `${host}:customer-service:${port}`,
+    hostName: "customer-service",
+    ipAddr: `${host}`,
     port: {
       $: 5000,
       "@enabled": "true",
     },
     vipAddress: "customer-service",
-    statusPageUrl: "http://localhost:5000/status",
-    healthCheckUrl: "http://localhost:5000/health",
+    statusPageUrl: `http://${host}:${port}/status`,
+    healthCheckUrl: `http://${host}:${port}/health`,
     dataCenterInfo: {
       "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
       name: "MyOwn",
     },
   },
-  eureka: {
-    host: "localhost",
-    port: 8761,
-    servicePath: "/eureka/apps",
-  },
-});
+})
 // Start Eureka client
 client.start((error) => {
   console.log("Eureka client started with error:", error);

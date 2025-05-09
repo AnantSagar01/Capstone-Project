@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ShopEasy.css';
 import axios from 'axios';
 
@@ -7,7 +8,8 @@ function ProductsPage() {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
-  const [sampleProducts, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -45,14 +47,18 @@ function ProductsPage() {
     ));
   };
 
+  const handleProductClick = (productId) => {
+    navigate(`/products/${productId}`); // Navigate to the ProductDetailsPage
+  };
+
   return (
     <div className="page products-page">
       <h1 className='products-heading'>Products</h1>
       <div className="product-grid">
-        {sampleProducts.map((product) => {
+        {products.map((product) => {
           const cartItem = cart.find((item) => item.id === product.id);
           return (
-            <div key={product.id} className="product-card">
+            <div key={product.id} className="product-card" onClick={() => handleProductClick(product.id)}>
               <img src={product.image} alt={product.title} />
               <div className="content">
                 <h3>{product.title}</h3>
@@ -60,7 +66,7 @@ function ProductsPage() {
                 <p>{product.description}</p>
                 <div className="price-add-to-cart">
                   <strong>₹{product.price}</strong>
-                  <button onClick={() => addToCart(product)}>
+                  <button onClick={(e) => { e.stopPropagation(); addToCart(product); }}>
                     {`+ Add to Cart ${cartItem ? `(${cartItem.quantity})` : ''}`}
                   </button>
                 </div>

@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
@@ -9,13 +10,9 @@ import CheckoutPage from './CheckoutPage';
 import FeedbackPage from './FeedbackPage';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Logout from './LogoutForm'; 
-import './ShopEasy.css';
-import Dashboard from './Dashboard';
+import Logout from './LogoutForm';
 
-const isAuthenticated = () => {
-  return localStorage.getItem('token') !== null;
-};
+import ProductDetailsPage from './ProductDetailsPage';
 
 function App() {
   return (
@@ -30,16 +27,10 @@ function App() {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/logout" element={<Logout />} />
-          <Route
-            path="/checkout"
-            element={isAuthenticated() ? <CheckoutPage /> : <Navigate to="/login" />}
-         
-          />
-        
+          <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
-          {/* Uncomment the NotFoundPage route if you have a component for handling 404 errors */}
-          {/* <Route path="*" element={<NotFoundPage />} /> */}
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/products/:productId" element={<ProductDetailsPage />} /> {/* New route */}
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         </Routes>
 
         <Footer />
