@@ -46,6 +46,7 @@ const host =
     .flat()
     .find((i) => i.family === "IPv4" && !i.internal)?.address || "127.0.0.1";
 const port = 5000;
+
 // Configure Eureka client
 const client = new Eureka({
   instance: {

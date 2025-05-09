@@ -1,9 +1,9 @@
-
 from flask import Flask, request, jsonify, send_file
 import sqlite3
 import csv
 import os
 from flask_cors import CORS
+from eureka.client import EurekaClient
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -126,10 +126,8 @@ def download_csv():
         return jsonify({'error': 'CSV file not found'}), 404
 
 if __name__ == '__main__':
-    # app.run(debug=True, port=8000)
-
-# app = create_app()
-# if __name__ == '__main__':
-#     ip=socket.gethostbyname(socket.gethostname())
-     eureka_client.init(eureka_server="http://localhost:8761/eureka",app_name="feedback-service",instance_ip=ip,instance_port=8000)
-     app.run(debug=True,host="0.0.0.0",port=8000)
+    eureka_client.init(eureka_server="http://localhost:8761/eureka",app_name="feedback-service",instance_ip="10.170.217.94",instance_port=7004)
+    app.run(host="0.0.0.0",port=7004)
+   
+    #  eureka_client.init(eureka_server="http://localhost:8761/eureka",app_name="feedback-service",instance_ip=ip,instance_port=8000)
+    #  app.run(debug=True,host="0.0.0.0",port=8000)
