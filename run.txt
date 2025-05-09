@@ -1,0 +1,34 @@
+Spring-boot
+mvn install
+mvn spring-boot:run
+
+
+
+
+Flask
+
+python -m virtualenv venv
+.\venv\Scripts\activate
+pip install Flask-Cors
+pip install py_eureka_client
+python.py
+
+
+
+
+Mongodb node
+
+Step 1: mongod --dbpath "C:\Software\mongodb\mongodb-win32-x86_64-windows-5.0.28\bin"
+Step 2: mongo --host localhost --port 27017
+Step 3: node server.js
+
+
+React
+npm install
+npm install papaparse
+npm start
+
+
+
+
+
