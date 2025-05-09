@@ -19,7 +19,7 @@ function Home() {
     <div className="home-wrapper">
       <div className="auth-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h3>Welcome <br/><br/>Find It Fast, Love It Forever </h3>
+        <h3>Welcome to ShopEasy<br/><br/>Find It Fast, Love It Forever </h3>
         <div className="btn-group">
           <button onClick={() => navigate('/register')}>Create Account</button>
           <br/>

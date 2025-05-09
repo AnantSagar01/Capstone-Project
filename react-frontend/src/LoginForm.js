@@ -76,7 +76,7 @@ function LoginForm() {
           <label htmlFor="rememberMe">Remember me</label>
         </div>
         <button onClick={handleLogin}>Login</button>
-        <button onClick={() => navigate(-1)}>Back</button>
+        <button onClick={() => navigate('/register')}>Sign up</button>
         <p>{success}</p>
       </div>
     </div>

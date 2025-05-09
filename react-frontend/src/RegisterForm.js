@@ -32,7 +32,7 @@ function RegisterForm() {
         setSuccess('Successfully Registered!');
         setError('');
         
-        navigate('/products'); // Navigate to another page if needed
+        navigate('/login'); // Navigate to another page if needed
       } 
       catch (error) 
       {
@@ -68,7 +68,7 @@ function RegisterForm() {
           </button>
         </div>
         <button onClick={handleRegister}>Register</button>
-        <button onClick={() => navigate(-1)}>Back</button>
+        <button onClick={() => navigate('/login')}>login</button>
         <p>{success}</p>
       </div>
     </div>
