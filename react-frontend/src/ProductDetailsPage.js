@@ -4,7 +4,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import './ProductDetailsPage.css';
 import Papa from 'papaparse'; // A library to parse CSV files easily
 
-
 function ProductDetailsPage() {
   const { productId } = useParams();
   const navigate = useNavigate();
@@ -103,12 +102,18 @@ function ProductDetailsPage() {
     });
     return distribution;
   };
-  
+
+  const calculateAverageRating = (reviews) => {
+    if (reviews.length === 0) return 0;
+    const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0);
+    return totalRating / reviews.length;
+  };
+
   const ratingDistribution = calculateRatingDistribution(reviews);
   const totalReviews = reviews.length;
+  const averageRating = calculateAverageRating(reviews);
 
   if (!product) return <div className="loading">Loading...</div>;
-
 
   return (
     <div className="product-details-container">
@@ -119,25 +124,24 @@ function ProductDetailsPage() {
         <strong className="product-price">Price: ₹{product.price}</strong>
         <div className="product-rating">
           {Array.from({ length: 5 }, (_, i) => (
-            <span key={i} className={`star ${i < product.rating ? 'filled' : ''}`}>★</span>
+            <span key={i} className={`star ${i < Math.round(averageRating) ? 'filled' : ''}`}>★</span>
           ))}
+          <span>({averageRating.toFixed(1)})</span> {/* Display average rating */}
         </div>
         <button className="add-to-cart-button" onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
 
-      
-
       <div className="product-details-right">
         <div className="customer-reviews">
-        <h2>Customer Reviews</h2>
-        {Object.entries(ratingDistribution).map(([rating, count]) => (
-          <div key={rating} className="review-bar">
-            <span>{rating} star</span>
-            <div className="bar-container">
-              <div className="bar" style={{ width: `${(count / totalReviews) * 100}%` }}></div>
+          <h2>Customer Reviews</h2>
+          {Object.entries(ratingDistribution).map(([rating, count]) => (
+            <div key={rating} className="review-bar">
+              <span>{rating} star</span>
+              <div className="bar-container">
+                <div className="bar" style={{ width: `${(count / totalReviews) * 100}%` }}></div>
+              </div>
+              <span>{((count / totalReviews) * 100).toFixed(1)}%</span>
             </div>
-            <span>{((count / totalReviews) * 100).toFixed(1)}%</span>
-          </div>
           ))}
         </div>
         <div className="reviews-section">
