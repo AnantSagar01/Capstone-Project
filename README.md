@@ -78,7 +78,7 @@ Ensure Eureka is running and all services are registered correctly.
 | Database    | MongoDB, Sqlite                    |
 | Communication | REST API                         |
 | Tools       | Git, GitHub, Postman, Bruno        |
-| Other       | Swagger, eureka                    |
+| Others       | Swagger, eureka                    |
 
 ---
 
