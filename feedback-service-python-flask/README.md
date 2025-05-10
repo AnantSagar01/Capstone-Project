@@ -1,6 +1,3 @@
-# Save the generated README content to a file for the user to download.
-
-readme_content = """
 # 🗣️ Feedback Service - Python Flask
 
 This is the **Feedback Microservice** component of the broader Capstone E-Commerce project [ShopEasy](https://github.com/AnantSagar01/Capstone-Project). It allows customers to submit, view, and manage product feedback via RESTful APIs. Built using **Python Flask**, this service communicates with other microservices in the project ecosystem.
