@@ -2,8 +2,6 @@
 
 Welcome to the frontend of **ShopEasy**, an e-commerce platform built using microservices. This React application serves as the user interface for browsing products, managing user accounts, placing orders, and interacting with feedback services.
 
-![ShopEasy Banner](#) <!-- Add your banner screenshot link here -->
-
 ---
 
 ## 📁 Project Structure
