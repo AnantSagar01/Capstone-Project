@@ -20,6 +20,7 @@ Mongodb node
 
 Step 1: mongod --dbpath "C:\Software\mongodb\mongodb-win32-x86_64-windows-5.0.28\bin"
 Step 2: mongo --host localhost --port 27017
+npm install swagger-ui-express
 Step 3: node server.js
 
 
