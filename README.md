@@ -8,6 +8,21 @@ A multi-service, full-stack capstone project developed using **Spring Boot**, **
 
 ---
 
+# 🏗️ Architecture
+```
+Capstone-Project/
+├── eureka-server/                     # Service registry using Spring Boot
+├── product-service-spring_boot/       # Product management microservice
+├── customer-service-mongodb-node/     # Customer registration microservice
+├── feedback-service-python-flask/     # Feedback collection microservice
+├── service-registry-node/             # Node.js based service registry
+├── react-frontend/                    # Frontend built with React
+├── prerequisite-installation.txt      # Setup instructions
+└── README.md                          # Project documentation
+```
+
+---
+
 ## 📁 Project Structure
 
 ```
