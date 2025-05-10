@@ -6,33 +6,27 @@ This is the **Product Microservice** of the [ShopEasy Capstone Project](https://
 
 ## 📸 Screenshots
 
-> Place your screenshots in the `screenshots/` folder and link them below for better visualization.
+Include relevant screenshots to showcase the application's functionality. Place your images in the `src/main/resources/images` directory and reference them as follows:
 
-| Product List | Add Product |
+### Swagger UI
+
+![Swagger UI](src/main/resources/images/swagger-ui.png)
+
+| Product List | Product Details |
 |--------------|-------------|
-| ![Product List](screenshots/get-products.png) | ![Add Product](screenshots/post-product.png) |
+| ![Product List](screenshots/get-products.png) | ![Product Details](screenshots/post-product.png) |
 
 ---
 
-## 🚀 Features
+## 📄 API Documentation
 
-- Add new products to the catalog
-- Retrieve all products or specific product by ID
-- Update product information
-- Delete products
-- RESTful API using Spring Boot
-- CORS enabled for frontend integration
+Once the application is running, access the Swagger UI for interactive API documentation at:
 
----
+```
+http://localhost:8080/swagger-ui.html
+```
 
-## 🛠 Tech Stack
-
-- **Backend Framework:** Spring Boot
-- **Language:** Java
-- **Database:** H2 (in-memory) or MySQL (for production)
-- **Build Tool:** Maven
-- **Testing:** JUnit, Postman
-- **Deployment Ready:** Docker (planned)
+This interface provides detailed information about available endpoints, request/response models, and allows for testing API calls directly from the browser.
 
 ---
 
@@ -109,6 +103,17 @@ You can test the API using:
 ```bash
 curl http://localhost:8080/products
 ```
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend Framework:** Spring Boot
+- **Language:** Java
+- **Database:** H2 (in-memory) or MySQL (for production)
+- **Build Tool:** Maven
+- **Testing:** JUnit, Postman
+- **Deployment Ready:** Docker (planned)
 
 ---
 
