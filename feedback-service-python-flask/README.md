@@ -6,7 +6,10 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 
 ## 📸 Screenshots
 
-> Add relevant screenshots of your API responses, Postman usage, or frontend integration here.
+### Swagger UI
+
+![Swagger UI](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7)
+
 
 | Feedback API (GET) Example | Feedback Submission (POST) Example |
 |----------------------------|------------------------------------|
