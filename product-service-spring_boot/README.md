@@ -31,7 +31,7 @@ This interface provides detailed information about available endpoints, request/
 ---
 
 ## 📁 Project Structure
-
+```
 product-service-spring_boot/
 ├── src/
 │ ├── main/
@@ -46,6 +46,7 @@ product-service-spring_boot/
 │ └── test/ # Unit tests
 ├── pom.xml # Maven configuration
 └── README.md
+```
 
 ---
 
