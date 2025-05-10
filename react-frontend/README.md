@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 🛍️ ShopEasy — React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend of **ShopEasy**, an e-commerce platform built using microservices. This React application serves as the user interface for browsing products, managing user accounts, placing orders, and interacting with feedback services.
 
-## Available Scripts
+![ShopEasy Banner](#) <!-- Add your banner screenshot link here -->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+react-frontend/
+│
+├── public/                # Static files and HTML template
+│
+├── src/
+│   ├── assets/            # Images, icons, and design assets
+│   ├── components/        # Reusable UI components (e.g., Navbar, ProductCard)
+│   ├── pages/             # Route-level components (Home, Login, Signup, etc.)
+│   ├── services/          # API interaction files for microservices
+│   ├── App.js             # Main component for routing and layout
+│   ├── index.js           # Entry point of the app
+│   └── styles/            # CSS or Tailwind configurations
+│
+├── .env                  # Environment variables for API URLs
+├── package.json          # Project metadata and dependencies
+└── README.md             # You're here!
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔐 **Authentication** with registration/login powered by Customer Microservice
+- 🛒 **Product Browsing** with dynamic data from Product Microservice
+- 💬 **Feedback Submission** handled via Flask Feedback Microservice
+- 🌐 Responsive UI with clean and modern design
+- 🎨 3D animations for a rich user experience
+- 🔄 Fully integrated with backend APIs and CI/CD ready
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖼️ Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏠 Home Page
 
-### `npm run eject`
+![Home Page](https://github.com/user-attachments/assets/c45fd053-7e6f-4b8e-ad43-5c1d233d9f40)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 👥 Customer Sign Up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Customer SignUp](https://github.com/user-attachments/assets/8cf83398-1efd-429b-bbf8-3f792c097f6e)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 🔓 Customer Login
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Customer Lgin](https://github.com/user-attachments/assets/2c437d15-68ef-44c4-b062-36685e4e18be)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### 📦 Product List
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Product List](https://github.com/user-attachments/assets/f22943a1-fecc-4add-bc5d-70b5b9df87af)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ✍️ Feedback and Review
 
-### Making a Progressive Web App
+![Feedback Form](https://github.com/user-attachments/assets/3ae7eba7-93fd-4e9d-834d-3249c2921962)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔧 Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Prerequisites
 
-### Deployment
+- Node.js (v18 or above)
+- NPM or Yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 1. Clone the Repository
 
-### `npm run build` fails to minify
+```bash
+git clone https://github.com/AnantSagar01/Capstone-Project.git
+cd Capstone-Project/react-frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Environment Setup
+
+Create a `.env` file in the `react-frontend` directory:
+
+```env
+REACT_APP_CUSTOMER_SERVICE_URL=http://localhost:8081
+REACT_APP_PRODUCT_SERVICE_URL=http://localhost:8082
+REACT_APP_FEEDBACK_SERVICE_URL=http://localhost:5000
+```
+
+> Update the URLs as per your deployed backend endpoints.
+
+### 4. Run the App
+
+```bash
+npm start
+# or
+yarn start
+```
+
+The app will be available at `http://localhost:3000`.
+
+---
+
+## 🔗 API Integration
+
+| Service         | Stack         | Port  | Description                        |
+|----------------|---------------|-------|------------------------------------|
+| Customer       | Spring Boot   | 8081  | Handles login/signup functionality |
+| Product        | Spring Boot   | 8082  | Manages products & inventory       |
+| Feedback       | Python Flask  | 5000  | Collects and stores user feedback  |
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js** + Hooks
+- **Tailwind CSS** / custom styling
+- **Axios** for HTTP requests
+- **Framer Motion** for animations
+- **React Router DOM** for routing
+- **Spring Boot** (backend services)
+- **Flask** (feedback service)
+
+---
+
+## 📦 Deployment
+
+> CI/CD setup coming soon. You can deploy using:
+
+- **Vercel** or **Netlify** for frontend
+- Ensure `.env` points to deployed backend services
