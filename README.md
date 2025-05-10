@@ -40,7 +40,6 @@ Capstone-Project/
 
 To access Swagger UI (after running services):
 
-  |To access Swagger UI (after running services):|
   | Product Service: `http://localhost:8080/swagger-ui/index.html`    | ![POST Screenshot](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)  |
   | Customer Service: `http://localhost:5000/api-docs`     | ![POST Screenshot](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1) |
   | Feedback Service: `http://localhost:8000/apidocs`    | ![POST Screenshot](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7) |
