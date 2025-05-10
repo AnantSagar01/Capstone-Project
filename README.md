@@ -40,11 +40,15 @@ Capstone-Project/
 
 To access Swagger UI (after running services):
 - Product Service: `http://localhost:8080/swagger-ui/index.html`
+
   
 - Customer Service: `http://localhost:5000/api-docs`
+  
   ![image](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
   
+  
 - Feedback Service: `http://localhost:8000/apidocs`
+
   ![image](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7)
 
 
@@ -57,7 +61,8 @@ To access Swagger UI (after running services):
 This project uses **Eureka Server** to register and discover services dynamically.
 
 - Eureka Dashboard: `http://localhost:8761`
-- ![image](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
+
+  ![image](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
 
 
 Ensure Eureka is running and all services are registered correctly.
