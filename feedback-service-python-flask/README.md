@@ -18,7 +18,7 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 
 ### Swagger UI
 
-![Swagger UI](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
+![Swagger UI](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7)
 
 
 | Feedback API (GET) Example | Feedback Submission (POST) Example |
