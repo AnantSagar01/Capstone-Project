@@ -41,7 +41,8 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 | `POST` | `/feedbacks` | Submit new feedback |
 | `DELETE` | `/feedbacks/<id>` | Delete feedback by ID |
 
-Sample JSON Payload for POST:
+### Sample JSON Payload for POST
+
 ```json
 {
   "product": "Laptop",
@@ -49,3 +50,79 @@ Sample JSON Payload for POST:
   "rating": 5,
   "comment": "Amazing product!"
 }
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/AnantSagar01/Capstone-Project.git
+cd Capstone-Project/feedback-service-python-flask
+```
+
+### 2. Create Virtual Environment (Optional but Recommended)
+```bash
+python3 -m venv venv
+source venv/bin/activate  # For Windows use: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Flask App
+```bash
+python app.py
+```
+
+The app should now be running at: `http://127.0.0.1:5000/`
+
+---
+
+## 🧪 Testing
+
+### GET All Feedback
+```bash
+curl http://127.0.0.1:5000/feedbacks
+```
+
+### POST Feedback
+```bash
+curl -X POST http://127.0.0.1:5000/feedbacks \
+  -H "Content-Type: application/json" \
+  -d '{"product":"Laptop","customer":"John","rating":5,"comment":"Great!"}'
+```
+
+---
+
+## 🐳 Optional: Docker Support (Coming Soon)
+A Dockerfile and docker-compose.yml can be added for containerized deployment in cloud environments.
+
+---
+
+## 📁 Project Structure
+
+```
+feedback-service-python-flask/
+│
+├── app.py                    # Main Flask application
+├── feedback_model.py         # Feedback ORM model
+├── requirements.txt          # Project dependencies
+├── static/                   # (Optional) Static files
+├── templates/                # (Optional) HTML templates
+└── README.md                 # Project documentation
+```
+
+---
+
+## 📌 To-Do / Future Enhancements
+
+- [ ] Add Swagger/OpenAPI documentation
+- [ ] Migrate to a production-grade DB (PostgreSQL)
+- [ ] Add JWT authentication for secure access
+- [ ] Integrate feedback analytics dashboard
+
+---
