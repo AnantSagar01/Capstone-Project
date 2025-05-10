@@ -3,20 +3,28 @@
 
 This module is the **Eureka Server** for the Capstone Project: **ShopEasy**, a microservices-based e-commerce platform. The Eureka Server acts as a service registry where all microservices (like Product, Customer, Feedback services) register themselves, enabling dynamic discovery and load-balanced communication among them.
 
-## 📚 Table of Contents
+## 📁 Folder Structure
 
-- [About](#about)
-- [Architecture](#architecture)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation & Running Locally](#installation--running-locally)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+```
+eureka-server/
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/anantsagar/eurekaserver/
+│       │       └── EurekaServerApplication.java
+│       └── resources/
+│           ├── application.yml
+│           └── static/
+│
+├── pom.xml
+├── README.md
+└── screenshots/
+    └── eureka-dashboard.png (Add your screenshot here)
+```
 
 ---
+
 
 ## 🔍 About
 
@@ -118,24 +126,3 @@ Use the dashboard to monitor active services, their health status, and metadata.
 
 ---
 
-## 📁 Folder Structure
-
-```
-eureka-server/
-│
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/anantsagar/eurekaserver/
-│       │       └── EurekaServerApplication.java
-│       └── resources/
-│           ├── application.yml
-│           └── static/
-│
-├── pom.xml
-├── README.md
-└── screenshots/
-    └── eureka-dashboard.png (Add your screenshot here)
-```
-
----
