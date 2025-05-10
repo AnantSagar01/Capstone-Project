@@ -99,8 +99,6 @@ REACT_APP_PRODUCT_SERVICE_URL=http://localhost:8082
 REACT_APP_FEEDBACK_SERVICE_URL=http://localhost:5000
 ```
 
-> Update the URLs as per your deployed backend endpoints.
-
 ### 4. Run the App
 
 ```bash
