@@ -13,6 +13,7 @@ A multi-service, full-stack capstone project developed using **Spring Boot**, **
 
 ```
 Capstone-Project/
+├── Eureka-Server/          # Spring Boot microservice for register and discover services dynamically.
 ├── service-registry/       # Node.js service registry
 ├── product-service/        # Spring Boot microservice for product operations
 ├── customer-service/       # Node.js/Express customer microservice with MongoDB
