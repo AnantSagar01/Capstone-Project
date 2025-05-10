@@ -27,6 +27,8 @@ function LoginForm() {
       // Handle success response
       let token=response.data.token;
       localStorage.setItem("token",token);
+      let name=response.data.name;
+      localStorage.setItem("name",name);
       setSuccess('Successfully Logged In!');
       navigate("/products");
       // You can also handle additional data returned from the API if needed
