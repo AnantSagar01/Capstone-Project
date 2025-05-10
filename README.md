@@ -35,16 +35,68 @@ Capstone-Project/
 
 ---
 
+## 🧪 API Documentation
+
+- ✅ **Swagger UI** – Integrated with services to visualize and test REST APIs.
+
+To access Swagger UI (after running services):
+- Product Service: `http://localhost:8080/swagger-ui/index.html`
+- Customer Service: `http://localhost:5000/api-docs` (if integrated)
+- Feedback Service: `http://localhost:8000/docs` (if using Flask-RESTX)
+
+---
+
+## 🛰️ Service Discovery
+
+This project uses **Eureka Server** to register and discover services dynamically.
+
+- Eureka Dashboard: `http://localhost:8761`
+
+Ensure Eureka is running and all services are registered correctly.
+
+---
+
 ## 🧰 Tech Stack
 
-| Layer       | Technology                        |
+| Layer       | Technology                         |
 |-------------|------------------------------------|
-| Frontend    | React.js, HTML, CSS               |
+| Frontend    | React.js, HTML, CSS                |
 | Backend     | Spring Boot (Java), Node.js, Flask |
-| Database    | MongoDB                            |
+| Database    | MongoDB, Sqlite                    |
 | Communication | REST API                         |
-| Tools       | Git, GitHub, Postman              |
-| Optional    | Docker (for containerization)     |
+| Tools       | Git, GitHub, Postman, Bruno        |
+| Optional    | Swagger, eureka                    |
+
+---
+
+## 🖼️ Screenshots
+
+> Add screenshots to the `screenshots/` folder and reference them below.
+
+### 🏠 Home Page
+
+![Home Page](https://github.com/user-attachments/assets/c45fd053-7e6f-4b8e-ad43-5c1d233d9f40)
+
+
+### 📦 Product List
+
+![Product List](https://github.com/user-attachments/assets/f22943a1-fecc-4add-bc5d-70b5b9df87af)
+
+
+### 👥 Customer Sign Up
+
+![Customer SignUp](https://github.com/user-attachments/assets/8cf83398-1efd-429b-bbf8-3f792c097f6e)
+
+
+### 👥 Customer Login
+
+![Customer Lgin](https://github.com/user-attachments/assets/2c437d15-68ef-44c4-b062-36685e4e18be)
+
+
+### ✍️ Feedback and Review
+
+![Feedback Form](https://github.com/user-attachments/assets/fa353b51-039e-4ad6-8e49-41f804ca8c31)
+
 
 ---
 
@@ -80,6 +132,9 @@ Set up each service:
    ```
 
 2. **Run each service**:
+   - **eureka**:  
+     `cd eureka-server && mvn spring-boot:run`
+   
    - **Service Registry**:  
      `cd service-registry && npm start`
 
@@ -95,7 +150,7 @@ Set up each service:
    - **Frontend**:  
      `cd frontend && npm start`
 
-3. Configure `.env` files as needed for services.
+4. Configure `.env` files as needed for services.
 
 ---
 
@@ -106,29 +161,7 @@ Set up each service:
   - `/api/products`
   - `/api/customers`
   - `/api/feedback`
-
----
-
-## 🖼️ Screenshots
-
-> Add screenshots to the `screenshots/` folder and reference them below.
-
-### 🏠 Home Page
-
-![Home Page](screenshots/home_page.png)
-
-### 📦 Product List
-
-![Product List](screenshots/product_list.png)
-
-### 👥 Customer Dashboard
-
-![Customer Dashboard](screenshots/customer_dashboard.png)
-
-### ✍️ Feedback Form
-
-![Feedback Form](screenshots/feedback_form.png)
-
+  
 ---
 
 ## 🤝 Contributing
