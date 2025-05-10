@@ -76,11 +76,6 @@ Ensure Eureka is running and all services are registered correctly.
 ![Home Page](https://github.com/user-attachments/assets/c45fd053-7e6f-4b8e-ad43-5c1d233d9f40)
 
 
-### 📦 Product List
-
-![Product List](https://github.com/user-attachments/assets/f22943a1-fecc-4add-bc5d-70b5b9df87af)
-
-
 ### 👥 Customer Sign Up
 
 ![Customer SignUp](https://github.com/user-attachments/assets/8cf83398-1efd-429b-bbf8-3f792c097f6e)
@@ -89,6 +84,10 @@ Ensure Eureka is running and all services are registered correctly.
 ### 👥 Customer Login
 
 ![Customer Lgin](https://github.com/user-attachments/assets/2c437d15-68ef-44c4-b062-36685e4e18be)
+
+### 📦 Product List
+
+![Product List](https://github.com/user-attachments/assets/f22943a1-fecc-4add-bc5d-70b5b9df87af)
 
 
 ### ✍️ Feedback and Review
