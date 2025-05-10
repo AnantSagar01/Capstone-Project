@@ -112,9 +112,6 @@ Use the dashboard to monitor active services, their health status, and metadata.
 ---
 
 ## 🖼️ Screenshots
-
-> 📌 You can place screenshots of the Eureka Dashboard here once the server is running.
-
 ### 🧩 Eureka Dashboard UI
 
 ![Eureka Dashboard](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
