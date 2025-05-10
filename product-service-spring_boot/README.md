@@ -4,6 +4,15 @@ This is the **Product Microservice** of the [ShopEasy Capstone Project](https://
 
 ---
 
+## 📌 Future Enhancements
+
+- Swagger UI documentation
+- Docker deployment
+- Product image upload
+- Integration with Inventory service
+  
+---
+
 ## 📸 Screenshots
 
 Include relevant screenshots to showcase the application's functionality. Place your images in the `src/main/resources/images` directory and reference them as follows:
@@ -115,15 +124,6 @@ curl http://localhost:8080/products
 - **Build Tool:** Maven
 - **Testing:** JUnit, Postman
 - **Deployment Ready:** Docker (planned)
-
----
-
-## 📌 Future Enhancements
-
-- Swagger UI documentation
-- Docker deployment
-- Product image upload
-- Integration with Inventory service
 
 ---
 
