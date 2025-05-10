@@ -1,5 +1,5 @@
 
-# 🚀 Capstone Project__E-Eommerce-website (EasyShop)
+# 🚀 Capstone Project__E Commerce-Website (EasyShop)
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/AnantSagar01/Capstone-Project)
 ![GitHub License](https://img.shields.io/github/license/AnantSagar01/Capstone-Project)
