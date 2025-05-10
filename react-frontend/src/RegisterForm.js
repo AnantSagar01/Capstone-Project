@@ -67,7 +67,7 @@ function RegisterForm() {
             <span className="eye-icon">{showPassword ? '🙈' : '👁️'}</span>
           </button>
         </div>
-        <button onClick={handleRegister}>Register</button>
+        <button onClick={handleRegister}>Sign Up</button>
         <button onClick={() => navigate('/login')}>login</button>
         <p>{success}</p>
       </div>
