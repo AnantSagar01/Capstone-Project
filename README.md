@@ -176,7 +176,19 @@ Set up each service:
   
 ---
 
-## 🤝 Contributing
+## 👥 Contributors
+
+Thanks to the following people who have contributed to this project:
+
+| Name         | GitHub Profile                          |
+|--------------|------------------------------------------|
+| Anant Sagar  | [@AnantSagar01](https://github.com/AnantSagar01) |
+| Sakshi Singh  | [@sakshisingh9222](https://github.com/sakshisingh9222) |
+| shreeshtareddy  | [@shreeshtareddy](https://github.com/shreeshtareddy) |
+
+Want to contribute? Please see the [Contributing](#-contributing) section above.
+
+# 🤝 Contributing
 
 Pull requests are welcome! To contribute:
 
