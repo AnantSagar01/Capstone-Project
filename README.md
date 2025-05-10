@@ -13,7 +13,6 @@ A multi-service, full-stack capstone project developed using **Spring Boot**, **
 ```
 Capstone-Project/
 ├── Eureka-Server/          # Spring Boot microservice for register and discover services dynamically.
-├── service-registry/       # Node.js service registry
 ├── product-service/        # Spring Boot microservice for product operations
 ├── customer-service/       # Node.js/Express customer microservice with MongoDB
 ├── feedback-service/       # Python Flask microservice for handling feedback
@@ -29,7 +28,7 @@ Capstone-Project/
 - 🛒 **Product Service** – Create, update, and view product listings.
 - 👤 **Customer Service** – Register and manage customer profiles.
 - 💬 **Feedback Service** – Submit and display customer feedback.
-- 🌐 **Service Registry** – Handle dynamic microservice discovery.
+- 🌐 **Eureka Server** – Handle, register and discover microservice services dynamic.
 - 💻 **Modern UI** – Built with React for responsiveness and interactivity.
 - 🔗 **REST APIs** – Clean API structure for inter-service communication.
 
