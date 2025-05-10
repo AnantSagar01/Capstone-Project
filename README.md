@@ -2,7 +2,6 @@
 # 🚀 Capstone Project__E Commerce-Website (EasyShop)
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/AnantSagar01/Capstone-Project)
-![GitHub License](https://img.shields.io/github/license/AnantSagar01/Capstone-Project) 
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/AnantSagar01/Capstone-Project)
 
 A multi-service, full-stack capstone project developed using **Spring Boot**, **Node.js**, **Flask**, and **React**. This application demonstrates **product management**, **customer registration**, and **feedback collection** in a microservices architecture.
