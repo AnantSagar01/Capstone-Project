@@ -4,19 +4,6 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 
 ---
 
-## 📸 Screenshots
-
-### Swagger UI
-
-![Swagger UI](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7)
-
-
-| Feedback API (GET) Example | Feedback Submission (POST) Example |
-|----------------------------|------------------------------------|
-| ![GET Screenshot](screenshots/get-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) |
-
----
-
 ## 🚀 Features
 
 - Add customer feedback with product and rating
@@ -27,13 +14,19 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Screenshots
 
-- **Backend:** Python, Flask, Flask-RESTful
-- **Database:** SQLite (can be switched to MySQL/PostgreSQL)
-- **Tools:** Postman (for testing), Git, Docker (optional for deployment)
+### Swagger UI
+
+![Swagger UI](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
+
+
+| Feedback API (GET) Example | Feedback Submission (POST) Example |
+|----------------------------|------------------------------------|
+| ![GET Screenshot](screenshots/get-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) |
 
 ---
+
 
 ## 🧩 API Endpoints
 
@@ -116,11 +109,10 @@ feedback-service-python-flask/
 
 ---
 
-## 📌 To-Do / Future Enhancements
+## 🛠️ Tech Stack
 
-- [ ] Add Swagger/OpenAPI documentation
-- [ ] Migrate to a production-grade DB (PostgreSQL)
-- [ ] Add JWT authentication for secure access
-- [ ] Integrate feedback analytics dashboard
+- **Backend:** Python, Flask, Flask-RESTful
+- **Database:** SQLite (can be switched to MySQL/PostgreSQL)
+- **Tools:** Postman (for testing), Git, Docker (optional for deployment)
 
 ---
