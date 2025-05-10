@@ -186,9 +186,7 @@ Thanks to the following people who have contributed to this project:
 | Sakshi Singh  | [@sakshisingh9222](https://github.com/sakshisingh9222) |
 | shreeshtareddy  | [@shreeshtareddy](https://github.com/shreeshtareddy) |
 
-Want to contribute? Please see the [Contributing](#-contributing) section above.
-
-### 🤝 Contributing
+### 🤝 Want to Contributing
 
 Pull requests are welcome! To contribute:
 
