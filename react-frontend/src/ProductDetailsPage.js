@@ -17,6 +17,8 @@ function ProductDetailsPage() {
   });
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const token = localStorage.getItem('token');
+  const name = localStorage.getItem('name');
+  console.log(name);
 
   useEffect(() => {
     const fetchProductDetails = async () => {
@@ -62,11 +64,11 @@ function ProductDetailsPage() {
     try {
       await axios.post(`http://localhost:8000/api/feedback`, {
         product_id: productId,
-        user_name: "Anonymous", // Using a default name since user details are not fetched
+        user_name: name, // Using a default name since user details are not fetched
         review: newReview,
         rating: newRating,
       });
-      setReviews([...reviews, { user_name: "Anonymous", review: newReview, rating: newRating }]);
+      setReviews([...reviews, { user_name: name, review: newReview, rating: newRating }]);
       setNewReview('');
       setNewRating(0);
     } catch (error) {
