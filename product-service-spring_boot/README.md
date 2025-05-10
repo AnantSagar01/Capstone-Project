@@ -10,7 +10,7 @@ Include relevant screenshots to showcase the application's functionality. Place 
 
 ### Swagger UI
 
-![Swagger UI](src/main/resources/images/swagger-ui.png)
+![Swagger UI]([src/main/resources/images/swagger-ui.png](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1))
 
 | Product List | Product Details |
 |--------------|-------------|
