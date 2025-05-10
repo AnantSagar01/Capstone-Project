@@ -72,8 +72,6 @@ Ensure Eureka is running and all services are registered correctly.
 
 ## 🖼️ Screenshots
 
-> Add screenshots to the `screenshots/` folder and reference them below.
-
 ### 🏠 Home Page
 
 ![Home Page](https://github.com/user-attachments/assets/c45fd053-7e6f-4b8e-ad43-5c1d233d9f40)
