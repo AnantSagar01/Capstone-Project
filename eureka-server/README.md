@@ -119,10 +119,5 @@ Use the dashboard to monitor active services, their health status, and metadata.
 
 ![Eureka Dashboard](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
 
-> Make sure to create a `screenshots/` folder in the `eureka-server` directory and place your dashboard screenshots there. You can use:
-> ```
-> mkdir screenshots
-> ```
-
 ---
 
