@@ -98,11 +98,6 @@ curl -X POST http://127.0.0.1:5000/feedbacks \
 
 ---
 
-## 🐳 Optional: Docker Support (Coming Soon)
-A Dockerfile and docker-compose.yml can be added for containerized deployment in cloud environments.
-
----
-
 ## 📁 Project Structure
 
 ```
