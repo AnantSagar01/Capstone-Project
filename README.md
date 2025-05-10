@@ -94,7 +94,7 @@ Ensure Eureka is running and all services are registered correctly.
 ![Customer SignUp](https://github.com/user-attachments/assets/8cf83398-1efd-429b-bbf8-3f792c097f6e)
 
 
-### 👥 Customer Login
+### 🔓 Customer Login
 
 ![Customer Lgin](https://github.com/user-attachments/assets/2c437d15-68ef-44c4-b062-36685e4e18be)
 
