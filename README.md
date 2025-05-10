@@ -43,7 +43,8 @@ To access Swagger UI (after running services):
 - Customer Service: `http://localhost:5000/api-docs` (if integrated)
 - Feedback Service: `http://localhost:8000/apidocs` (if using Flask-RESTX)
 - ![image](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
-- ![image](https://github.com/user-attachments/assets/7487d7d5-9ca1-4a76-8836-e88588111aa1)
+- ![image](https://github.com/user-attachments/assets/e5ad8448-e869-4acc-9f4a-da682af7e2f7)
+
 
 
 
