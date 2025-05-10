@@ -36,7 +36,7 @@ Capstone-Project/
 
 ## 🧪 API Documentation
 
-- ✅ **Swagger UI** – Integrated with services to visualize and test REST APIs.
+✅ **Swagger UI** – Integrated with services to visualize and test REST APIs.
 
 To access Swagger UI (after running services):
 - Product Service: `http://localhost:8080/swagger-ui/index.html`
