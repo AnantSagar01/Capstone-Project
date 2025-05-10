@@ -188,7 +188,7 @@ Thanks to the following people who have contributed to this project:
 
 Want to contribute? Please see the [Contributing](#-contributing) section above.
 
-# 🤝 Contributing
+### 🤝 Contributing
 
 Pull requests are welcome! To contribute:
 
