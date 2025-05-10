@@ -18,6 +18,20 @@ This repository contains the **Customer Service** microservice of the `ShopEasy`
 
 ---
 
+## 📸 Screenshots
+
+### Swagger UI
+
+![Swagger UI](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
+
+
+| ✅ Registration & Login Success | 🔐 JWT Token Response | ### 👤 Profile Fetch |
+|----------------------------|------------------------------------|------------------------------------|
+| ![GET Screenshot](screenshots/get-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) |
+
+
+---
+
 ## 🏗️ Technologies Used
 
 - **Node.js** (JavaScript runtime)
@@ -135,24 +149,6 @@ Content-Type: application/json
 
 ---
 
-## 📸 Screenshots
-
-> Place your working screenshots here:
-
-### ✅ Registration & Login Success
-
-![Registration Screenshot](./screenshots/registration-success.png)
-
-### 🔐 JWT Token Response
-
-![JWT Token Screenshot](./screenshots/jwt-token.png)
-
-### 👤 Profile Fetch
-
-![Profile Screenshot](./screenshots/profile-fetch.png)
-
----
-
 ## 📦 Deployment (Optional)
 
 If you're deploying this service:
@@ -160,14 +156,5 @@ If you're deploying this service:
 - Use **Render**, **Railway**, or **Heroku** for easy deployment.
 - Set environment variables securely.
 - Configure CORS if calling from front-end.
-
----
-
-## 🧠 Future Enhancements
-
-- 🛡️ Rate limiting and security headers
-- 📧 Email verification and password reset
-- 🧑‍💼 Admin role for user management
-- 📊 Logging and monitoring (e.g., using Winston or Morgan)
 
 ---
