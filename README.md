@@ -1,4 +1,3 @@
-
 # 🚀 Capstone Project _ E Commerce-Website (EasyShop)
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/AnantSagar01/Capstone-Project)
@@ -20,22 +19,6 @@ Capstone-Project/
 ├── prerequisite-installation.txt      # Setup instructions
 └── README.md                          # Project documentation
 ```
-
----
-
-## 📁 Project Structure
-
-```
-Capstone-Project/
-├── Eureka-Server/          # Spring Boot microservice for register and discover services dynamically.
-├── product-service/        # Spring Boot microservice for product operations
-├── customer-service/       # Node.js/Express customer microservice with MongoDB
-├── feedback-service/       # Python Flask microservice for handling feedback
-├── frontend/               # React.js frontend for UI/UX
-├── screenshots/            # Folder for UI screenshots
-└── README.md               # Project documentation
-```
-
 ---
 
 ## 🌟 Key Features
@@ -46,6 +29,65 @@ Capstone-Project/
 - 🌐 **Eureka Server** – Handle, register and discover microservice services dynamic.
 - 💻 **Modern UI** – Built with React for responsiveness and interactivity.
 - 🔗 **REST APIs** – Clean API structure for inter-service communication.
+
+---
+
+## 📁 Project Structure
+
+```
+Capstone-Project/
+├── eureka-server/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/easyshop/eureka/
+│   │       │   └── EurekaServerApplication.java
+│   │       └── resources/
+│   │           └── application.yml
+│   └── pom.xml
+│
+├── product-service-spring_boot/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/easyshop/product/
+│   │       │   ├── controller/
+│   │       │   ├── model/
+│   │       │   ├── repository/
+│   │       │   └── ProductServiceApplication.java
+│   │       └── resources/
+│   │           └── application.yml
+│   └── pom.xml
+│
+├── customer-service-mongodb-node/
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   ├── config/
+│   └── server.js
+│
+├── feedback-service-python-flask/
+│   ├── app/
+│   │   ├── routes.py
+│   │   ├── models.py
+│   │   └── __init__.py
+│   ├── requirements.txt
+│   └── run.py
+│
+├── service-registry-node/
+│   └── [similar structure to customer-service-mongodb-node]
+│
+├── react-frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.js
+│   ├── package.json
+│   └── .env
+│
+├── prerequisite-installation.txt
+└── README.md
+```
 
 ---
 
