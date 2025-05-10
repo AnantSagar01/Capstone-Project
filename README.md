@@ -184,7 +184,7 @@ Thanks to the following people who have contributed to this project:
 |--------------|------------------------------------------|
 | Anant Sagar  | [@AnantSagar01](https://github.com/AnantSagar01) |
 | Sakshi Singh  | [@sakshisingh9222](https://github.com/sakshisingh9222) |
-| shreeshtareddy  | [@shreeshtareddy](https://github.com/shreeshtareddy) |
+| Shreeshta Reddy  | [@shreeshtareddy](https://github.com/shreeshtareddy) |
 
 ### 🤝 Want to Contributing
 
