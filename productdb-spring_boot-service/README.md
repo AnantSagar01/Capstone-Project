@@ -22,9 +22,9 @@ Include relevant screenshots to showcase the application's functionality. Place 
 ![Swagger UI](https://github.com/user-attachments/assets/cc691a63-2af1-46ff-86d3-60d0e6133e4c)
 
 
-| Product List | Product Details |
+| Product List | Add Product |
 |--------------|-------------|
-| ![Product List](screenshots/get-products.png) | ![Product Details](screenshots/post-product.png) |
+| ![Product List](https://github.com/user-attachments/assets/c0963721-69c1-4746-beaa-32618966ab7b) | ![Product Details](https://github.com/user-attachments/assets/b18d22ab-79f0-4fc7-9ab9-9fe22dbb191b) |
 
 ---
 
