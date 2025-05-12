@@ -100,7 +100,7 @@ To access Swagger UI (after running services):
   |-------------|------------------------------------|
   | Product Service: `http://localhost:8080/swagger-ui/index.html`    More details: [About Product Service](https://github.com/AnantSagar01/Capstone-Project/blob/main/product-service-spring_boot/README.md)| ![Product Screenshot](https://github.com/user-attachments/assets/8401d348-39ea-4532-9729-403124c1aeee)  |
   | Customer Service: `http://localhost:5000/api-docs`     ___More details: [About Customer Service](https://github.com/AnantSagar01/Capstone-Project/blob/main/customer-service-mongodb-node/README.md)| ![Customer Screenshot](https://github.com/user-attachments/assets/6c39b493-8ad7-458f-89c7-a0d256391309) |
-  | Feedback Service: `http://localhost:8000/apidocs`    ___More details: [About Feedback Service](https://github.com/AnantSagar01/Capstone-Project/blob/main/feedback-service-python-flask/README.md)| ![Feedback Screenshot](https://github.com/user-attachments/assets/746d0b53-e056-4354-a619-2ce6514a48c3) |
+  | Feedback Service: `http://localhost:8000/apidocs`    _____More details: [About Feedback Service](https://github.com/AnantSagar01/Capstone-Project/blob/main/feedback-service-python-flask/README.md)| ![Feedback Screenshot](https://github.com/user-attachments/assets/746d0b53-e056-4354-a619-2ce6514a48c3) |
   
 ---
 
