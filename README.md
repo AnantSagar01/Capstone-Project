@@ -98,7 +98,7 @@ Capstone-Project/
 To access Swagger UI (after running services):
   |    URL      |     🖼️ Screenshots                  |
   |-------------|------------------------------------|
-  | Product Service: `http://localhost:8080/swagger-ui/index.html`    | ![Product Screenshot](https://github.com/user-attachments/assets/8401d348-39ea-4532-9729-403124c1aeee)  |
+  | Product Service: `http://localhost:8080/swagger-ui/index.html`    > 🔗 Part of the main Capstone Project: [Capstone E-commerce Project](https://github.com/AnantSagar01/Capstone-Project)| ![Product Screenshot](https://github.com/user-attachments/assets/8401d348-39ea-4532-9729-403124c1aeee)  |
   | Customer Service: `http://localhost:5000/api-docs`     | ![Customer Screenshot](https://github.com/user-attachments/assets/6c39b493-8ad7-458f-89c7-a0d256391309) |
   | Feedback Service: `http://localhost:8000/apidocs`    | ![Feedback Screenshot](https://github.com/user-attachments/assets/746d0b53-e056-4354-a619-2ce6514a48c3) |
   
