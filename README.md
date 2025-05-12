@@ -44,7 +44,7 @@ Capstone-Project/
 │   │           └── application.yml
 │   └── pom.xml
 │
-├── product-service-spring_boot/
+├── productdb-spring_boot-service/
 │   ├── src/
 │   │   └── main/
 │   │       ├── java/com/easyshop/product/
