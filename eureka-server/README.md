@@ -72,7 +72,8 @@ Use the dashboard to monitor active services, their health status, and metadata.
 ## 🖼️ Screenshots
 ### 🧩 Eureka Dashboard UI
 
-![Eureka Dashboard](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
+![Eureka Dashboard](https://github.com/user-attachments/assets/09b0de5c-abfc-4a43-8c54-ac6c32a6d1a3)
+
 
 ---
 
