@@ -23,7 +23,8 @@ This is the **Feedback Microservice** component of the broader Capstone E-Commer
 
 | Feedback API (GET) Example | Feedback Submission (POST) Example |
 |----------------------------|------------------------------------|
-| ![GET Screenshot](screenshots/get-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) |
+| ![GET Screenshot](https://github.com/user-attachments/assets/c3e37c4d-2aaf-4c17-82a9-ab8cb52c23ee) | ![POST Screenshot](https://github.com/user-attachments/assets/094706cd-e443-4e05-b985-ec89abe3a310)
+ |
 
 ---
 
