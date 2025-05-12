@@ -90,7 +90,7 @@ function ProductDetailsPage() {
 
     setCart(newCart);
     localStorage.setItem('cart', JSON.stringify(newCart));
-    alert(`${product.title} added to cart!`);
+    alert(`${product.name} added to cart!`);
   };
 
   const toggleImagePopup = () => {
