@@ -28,7 +28,7 @@ This repository contains the **Customer Service** microservice of the `ShopEasy`
 
 | ✅ Registration | 🔐 Login Success | 👤 Profile Fetch |
 |----------------------------|------------------------------------|------------------------------------|
-| ![POST Screenshot](https://github.com/user-attachments/assets/9c1ccceb-a62e-41cd-be26-8bcc15500390) | ![POST](https://github.com/user-attachments/assets/087bf2da-4101-490b-8305-4c352328e5b5) | ![GET Screenshot](https://github.com/user-attachments/assets/cf03ddbd-460e-4aa3-8d11-32521e0c9973)) |
+| ![POST Screenshot](https://github.com/user-attachments/assets/9c1ccceb-a62e-41cd-be26-8bcc15500390) | ![POST](https://github.com/user-attachments/assets/087bf2da-4101-490b-8305-4c352328e5b5) | ![GET Screenshot](https://github.com/user-attachments/assets/cf03ddbd-460e-4aa3-8d11-32521e0c9973) |
 
 
 ---
