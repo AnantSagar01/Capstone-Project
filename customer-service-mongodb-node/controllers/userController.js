@@ -34,27 +34,37 @@ exports.loginUser = async (req, res) => {
 };
 
 exports.deleteUser = async (req, res) => {
- try {
-  await User.findByIdAndDelete(req.user.id);
-  res.json({ message: 'User deleted successfully' });
- } catch (error) {
-  res.status(400).json({ message: error.message });
- }
+  const token = jwt.sign({ email: user._email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+  const { email } = req.body; // Accessing the email from request body
+  try {
+    const user = await User.findOneAndDelete({ email }); // Find by email
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    res.json({ message: 'User deleted successfully' });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
 };
 
+
 exports.updateUser = async (req, res) => {
- const { name, email } = req.body;
- try {
-  const updatedUser = await User.findByIdAndUpdate(
-   req.user.id,
-   { name, email },
-   { new: true }
-  );
-  res.json(updatedUser);
- } catch (error) {
-  res.status(400).json({ message: error.message });
- }
+  const { email, name } = req.body; // Accessing the email and name from request body
+  try {
+    const updatedUser = await User.findOneAndUpdate(
+      { email }, // Find by email
+      { name },  // Update name
+      { new: true }
+    );
+    if (!updatedUser) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    res.json(updatedUser);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
 };
+
 exports.getAllUsers = async (req, res) => {
   try {
    const users = await User.find().select('-password'); // Exclude the password field

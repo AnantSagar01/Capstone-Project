@@ -9,7 +9,8 @@ Flask
 
 python -m virtualenv venv
 .\venv\Scripts\activate
-pip install Flask-Cors
+pip install flask_cors
+
 pip install py_eureka_client
 pip install flasgger
 
@@ -25,6 +26,8 @@ Mongodb node
 
 Step 1: mongod --dbpath "C:\Software\mongodb\mongodb-win32-x86_64-windows-5.0.28\bin"
 Step 2: mongo --host localhost --port 27017
+npm install swagger-jsdoc
+
 npm install swagger-ui-express
 Step 3: node server.js
 
