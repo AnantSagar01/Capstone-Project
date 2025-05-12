@@ -14,7 +14,6 @@ Capstone-Project/
 ├── product-service-spring_boot/       # Product management microservice
 ├── customer-service-mongodb-node/     # Customer registration microservice
 ├── feedback-service-python-flask/     # Feedback collection microservice
-├── service-registry-node/             # Node.js based service registry
 ├── react-frontend/                    # Frontend built with React
 ├── prerequisite-installation.txt      # Setup instructions
 └── README.md                          # Project documentation
@@ -72,8 +71,6 @@ Capstone-Project/
 │   ├── requirements.txt
 │   └── run.py
 │
-├── service-registry-node/
-│   └── [similar structure to customer-service-mongodb-node]
 │
 ├── react-frontend/
 │   ├── public/
