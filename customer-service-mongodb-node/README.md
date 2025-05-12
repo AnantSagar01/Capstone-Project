@@ -22,12 +22,16 @@ This repository contains the **Customer Service** microservice of the `ShopEasy`
 
 ### Swagger UI
 
-![Swagger UI](https://github.com/user-attachments/assets/f0696359-6d81-4127-b1a4-26747cdab8a1)
+![Swagger UI](https://github.com/user-attachments/assets/159e375c-ae66-4394-a9e2-b9d63cdc728a)
 
 
-| ✅ Registration & Login Success | 🔐 JWT Token Response | 👤 Profile Fetch |
+
+| ✅ Registration | 🔐 Login Success | 👤 Profile Fetch |
 |----------------------------|------------------------------------|------------------------------------|
-| ![GET Screenshot](screenshots/get-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) | ![POST Screenshot](screenshots/post-feedback.png) |
+| ![POST Screenshot](https://github.com/user-attachments/assets/9c1ccceb-a62e-41cd-be26-8bcc15500390)
+
+ | ![POST](https://github.com/user-attachments/assets/087bf2da-4101-490b-8305-4c352328e5b5)
+ | ![GET Screenshot](https://github.com/user-attachments/assets/cf03ddbd-460e-4aa3-8d11-32521e0c9973)) |
 
 
 ---
