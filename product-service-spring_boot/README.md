@@ -19,11 +19,12 @@ Include relevant screenshots to showcase the application's functionality. Place 
 
 ### Swagger UI
 
-![Swagger UI](f0696359-6d81-4127-b1a4-26747cdab8a1)
+![Swagger UI](https://github.com/user-attachments/assets/2b28597f-6dd1-4221-8f93-b7ce4b19ba08)
+
 
 | Product List | Product Details |
 |--------------|-------------|
-| ![Product List](screenshots/get-products.png) | ![Product Details](screenshots/post-product.png) |
+| ![Product List](https://github.com/user-attachments/assets/fdc37312-c53e-4b7d-ad78-369fa0c0b1ec)| ![Product Details](https://github.com/user-attachments/assets/3ac6848a-e410-4206-b72d-4564e4e1c300)|
 
 ---
 
