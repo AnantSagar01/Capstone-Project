@@ -6,7 +6,7 @@ mvn spring-boot:run
 
 
 Flask
-
+python pip install virtualenv
 python -m virtualenv venv
 .\venv\Scripts\activate
 pip install flask_cors
@@ -16,7 +16,7 @@ pip install flasgger
 
 python 
   from flasgger import Swagger
-
+exit()
 python app.py
 
 
@@ -34,6 +34,7 @@ Step 3: node server.js
 
 React
 npm install
+nom install bootstrap
 npm install papaparse
 npm start
 
