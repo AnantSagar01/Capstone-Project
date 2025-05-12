@@ -58,6 +58,25 @@ Services discover and communicate with each other via this registry.
 
 ---
 
+## 🚀 Usage
+
+Once the Eureka Server is up and running:
+
+- Other microservices can register themselves using `@EnableEurekaClient`.
+- They will appear on the Eureka Dashboard under the **Instances currently registered with Eureka** section.
+
+Use the dashboard to monitor active services, their health status, and metadata.
+
+---
+
+## 🖼️ Screenshots
+### 🧩 Eureka Dashboard UI
+
+![Eureka Dashboard](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
+
+---
+
+
 ## ⚙️ Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -99,22 +118,3 @@ http://localhost:8761/
 ```
 
 ---
-
-## 🚀 Usage
-
-Once the Eureka Server is up and running:
-
-- Other microservices can register themselves using `@EnableEurekaClient`.
-- They will appear on the Eureka Dashboard under the **Instances currently registered with Eureka** section.
-
-Use the dashboard to monitor active services, their health status, and metadata.
-
----
-
-## 🖼️ Screenshots
-### 🧩 Eureka Dashboard UI
-
-![Eureka Dashboard](https://github.com/user-attachments/assets/84969858-d850-4d0d-9c2d-e9f7d86b5da8)
-
----
-
