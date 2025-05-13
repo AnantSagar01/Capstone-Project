@@ -105,7 +105,7 @@ To access Swagger UI (after running services):
 
 This project uses **Eureka Server** to register and discover services dynamically.
 
-- Eureka Dashboard: `http://localhost:8761`
+- Eureka Dashboard running on : `http://localhost:8761`
 
   ![image](https://github.com/user-attachments/assets/cfdeb56e-e620-4eef-aaf7-582589e64ae4)
 
